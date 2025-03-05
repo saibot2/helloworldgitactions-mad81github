@@ -1,5 +1,5 @@
 ## Objetivo
-Crear  Hello world
+Crear.  Hello world
 
 ## Tareas
 1. Crear un archivo llamado workflow.yml en la carpeta .github/workflows en la raíz.
