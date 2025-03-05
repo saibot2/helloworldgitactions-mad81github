@@ -6,4 +6,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Print hola
-              run: echo "¡Hola, mundo 4!"
+              run: echo "¡Hola, mundo 4! ${{github.event_name}}"
