@@ -11,4 +11,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Step1
-              run: echo "Hola mundo"
+              run: echo "Hola mundo, fui lanzado por el evento ${{github.event_name}}"
