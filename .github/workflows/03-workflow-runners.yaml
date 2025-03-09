@@ -1,0 +1,15 @@
+name: 03-runners-workflow
+on: 
+    push
+
+jobs:
+    ubuntu-echo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: mostart so
+              run: |
+                echo "Este trabajo se ejecuta..."            
+                echo "${{runner.os}}"   
+    windows-echo:
+        runs-on: windows-latest         
+    
