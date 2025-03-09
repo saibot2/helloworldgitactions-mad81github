@@ -1,4 +1,4 @@
-name: Eventos
+name: EVentos
 
 on: 
     pull_request:
