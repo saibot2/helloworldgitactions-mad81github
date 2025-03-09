@@ -1,15 +1,27 @@
 name: 03-runners-workflow
 on: 
-    push
+    push:
 
 jobs:
     ubuntu-echo:
         runs-on: ubuntu-latest
         steps:
-            - name: mostart so
+            - name: mostrar so          
               run: |
-                echo "Este trabajo se ejecuta..."            
+                echo "Este trabajo se ejecuta en un runner de ubuntu"            
                 echo "${{runner.os}}"   
     windows-echo:
         runs-on: windows-latest         
-    
+        steps:
+            - name: mostrar so
+              shell: bash
+              run: |
+                echo "Este trabajo se ejecuta en un runner de Windows"            
+                echo "${{runner.os}}"   
+    mac-echo:
+        runs-on: macos-latest         
+        steps:
+            - name: mostrar so
+              run: |
+                echo "Este trabajo se ejecuta en un runner de mac"            
+                echo "${{runner.os}}"  
