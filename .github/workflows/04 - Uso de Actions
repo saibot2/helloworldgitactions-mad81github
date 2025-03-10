@@ -10,7 +10,7 @@ jobs:
             run:
                 working-directory: my-appluis
         steps:
-            - name: Checkout Code
+            - name: Checkout Code 
               uses: actions/checkout@v4
               
             - name: Printing Folders
