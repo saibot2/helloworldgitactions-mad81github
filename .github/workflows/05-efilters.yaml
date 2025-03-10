@@ -1,0 +1,13 @@
+name: 05 - Event Filters
+on:
+    push:
+        branches:
+            - features
+
+jobs:
+    muestra-echo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: mostrar echo        
+              run: 
+                echo "Running whenever branch is features"            
